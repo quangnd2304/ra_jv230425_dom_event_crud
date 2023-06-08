@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Student</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="studentId">Student ID</label>
+        <input type="text" name="studentId" id="studentId" /><br>
+        <label for="studentName">Student Name</label>
+        <input type="text" name="studentName" id="studentName" /><br>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" /><br>
+        <label for="phone">Phone</label>
+        <input type="text" name="phone" id="phone" /><br>
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" /><br>
+        <label for="sex">Sex</label>
+        <input type="radio" name="sex" id="male" value="Male" checked><label for="male">Male</label>
+        <input type="radio" name="sex" id="female" value="Female"><label for="female">Female</label><br>
+        <input type="submit" value="Save" id="btnSave" />
+    </form>
+    <h2>Danh sách học viên</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Student Id</td>
+                <td>Student Name</td>
+                <td>Email</td>
+                <td>Phone</td>
+                <td>Address</td>
+                <td>Sex</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+        <tbody id="content">
+
+        </tbody>
+    </table>
+    <script src="./js/student.js"></script>
+</body>
+
+</html>
